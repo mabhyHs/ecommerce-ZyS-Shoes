@@ -1,0 +1,29 @@
+.container{
+  margin: 15px 25px;
+}
+
+.top-nav {
+    overflow: hidden;
+    background-color: rgb(223, 147, 216);
+  }
+  
+  .top-nav p {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+  .top-nav p:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .brand-right{
+    float: left;
+    color: #f2f2f2;
+  }
+ 
