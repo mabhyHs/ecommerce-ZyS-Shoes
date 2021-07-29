@@ -1,12 +1,22 @@
+import React, { useState } from 'react';
+import { ItemCount } from '../ItemCount/ItemCount';
 import './ItemListContainer.css';
 
-const ItemListContainer = (props) =>{
-    const{ greeting, color, fontSize } = props;
+const ItemListContainer = () =>{
+    const [cantCompra, setCantCompra] = useState(0);
 
+    const onAdd = ( cantidad ) => {
+        setCantCompra( cantidad );
+    };
     return(
-    <h1 style ={{ color, fontSize}}>
-           {greeting}
-    </h1>    
+        <div>
+        {cantCompra === 0 &&
+            <ItemCount 
+                initial={1}
+                onAdd={onAdd}
+            />
+        }
+        </div>
     );
 }
 
